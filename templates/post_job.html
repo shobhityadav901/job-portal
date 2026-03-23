@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a New Job</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 40px; 
+            background: #f4f7f6; 
+            display: flex;
+            justify-content: center;
+        }
+        .form-container { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            width: 100%;
+            max-width: 500px;
+        }
+        h1 { color: #333; text-align: center; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; color: #555; }
+        input, textarea { 
+            width: 100%; 
+            padding: 10px; 
+            border: 1px solid #ddd; 
+            border-radius: 6px; 
+            box-sizing: border-box; /* padding fix */
+        }
+        textarea { height: 100px; resize: vertical; }
+        .btn-submit { 
+            background: #007bff; 
+            color: white; 
+            padding: 12px; 
+            border: none; 
+            border-radius: 6px; 
+            width: 100%; 
+            cursor: pointer; 
+            font-size: 16px; 
+            font-weight: bold;
+        }
+        .btn-submit:hover { background: #0056b3; }
+        .back-link { 
+            display: block; 
+            text-align: center; 
+            margin-top: 15px; 
+            text-decoration: none; 
+            color: #777; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Post a Job</h1>
+    <form action="/post" method="POST">
+        <div class="form-group">
+            <label for="title">Job Title</label>
+            <input type="text" id="title" name="title" placeholder="e.g. Python Developer" required>
+        </div>
+
+        <div class="form-group">
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company" placeholder="e.g. Tech Solutions" required>
+        </div>
+
+        <div class="form-group">
+            <label for="desc">Job Description</label>
+            <textarea id="desc" name="desc" placeholder="Describe the role and requirements..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit Job</button>
+    </form>
+    <a href="/" class="back-link">← Back to Home</a>
+</div>
+
+</body>
+</html>
