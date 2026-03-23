@@ -16,7 +16,6 @@ Ek full-stack Job Portal system jise **Python** aur **Flask** ka use karke banay
 * **Hosting Support:** Render / PythonAnywhere
 
 ## 📂 Project Structure
-```text
 job-portal/
 ├── app.py              # Main Flask application logic
 ├── jobs.db             # SQLite Database file
@@ -50,11 +49,12 @@ Shobhit Yadav - Computer Science Student (B.Tech, AKTU)
 
 
 
----
+
 
 ### **Zaroori Baat (Important):**
 Aapne jo pehle `requirements.txt` bheji thi wo bahut badi thi. GitHub par push karne se pehle apni `requirements.txt` file mein sirf ye 2 lines rakhna:
 
-```text
 Flask==3.0.3
 gunicorn==22.0.0
+
+the link of the live website "https://job-portal-6w70.onrender.com/"
